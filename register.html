@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — educAItion Pilot Camp | August 17-21, 2026</title>
+  <meta name="description" content="Register your child for the educAItion pilot AI literacy camp in Chicago. August 17-21, 2026. Limited to about 15 families.">
+  <meta property="og:title" content="Register — educAItion Pilot Camp">
+  <meta property="og:description" content="Reserve a spot for your child in our first AI literacy camp. Chicago, August 17-21, 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#B8860B"/>
+          <path d="M14 4 C14 4 8 10 8 16 C8 20 10.5 23 14 23 C17.5 23 20 20 20 16 C20 10 14 4 14 4Z" fill="#FFF8E1"/>
+          <circle cx="14" cy="15" r="3" fill="#B8860B"/>
+        </svg>
+        educAItion
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="nav-menu">
+        <li class="nav__item"><a href="index.html">Home</a></li>
+        <li class="nav__item"><a href="about.html">About</a></li>
+        <li class="nav__item"><a href="curriculum.html">Curriculum</a></li>
+        <li class="nav__item nav__item--active"><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
+        <h1 class="hero__title fade">Register for the Pilot</h1>
+        <p class="hero__sub fade">
+          Join our pilot community of 15 families in Chicago and help shape AI literacy for the next generation. Parents are welcome to join any day — because this is built by community, not a team.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section section--alt" style="padding-top:0;">
+      <div class="container" style="max-width:560px;">
+        <form
+          class="fade"
+          name="registration"
+          method="POST"
+          netlify
+          netlify-honeypot="favorite-answer"
+          data-netlify="true"
+        >
+          <!-- Hidden honeypot field (anti-spam) -->
+          <p style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+            <label>
+              If you're human, leave this blank:
+              <input name="favorite-answer" tabindex="-1" autocomplete="off" type="text">
+            </label>
+          </p>
+          <!-- Netlify required hidden fields -->
+          <input type="hidden" name="form-name" value="registration">
+
+          <div class="form-group">
+            <label class="form-label" for="parent-name">Your Name</label>
+            <input class="form-input" type="text" id="parent-name" name="parent-name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+            <p class="form-hint">We'll use this to share camp details and updates.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="who-reg">Who Are You Registering?</label>
+            <select class="form-input" id="who-reg" name="who-reg" required>
+              <option value="" disabled selected>Select who you're registering for</option>
+              <option value="self">For myself (parent/guardian)</option>
+              <option value="child">For my child (ages 8&ndash;12)</option>
+              <option value="both">For myself and my child</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="child-age">Your Child's Age</label>
+            <select class="form-input" id="child-age" name="child-age">
+              <option value="" disabled selected>Select your child's age</option>
+              <option value="8">8 years old</option>
+              <option value="9">9 years old</option>
+              <option value="10">10 years old</option>
+              <option value="11">11 years old</option>
+              <option value="12">12 years old</option>
+            </select>
+            <p class="form-hint">Our camp is designed for ages 8&ndash;12 (Grades 2&ndash;6). Parents are welcome to register for themselves too.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Anything You'd Like Us to Know</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Questions, dietary needs, accessibility needs, or anything else..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="form-checkbox">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">
+                I consent to educAItion collecting my child's information for the purpose of camp registration and communication. See our
+                <a href="#privacy" id="privacy-link">Privacy Notice</a> for details on how your data is used and your rights.
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width:100%;">
+            Reserve My Child's Spot
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PRIVACY NOTICE -->
+    <section class="section" style="padding-top:0;">
+      <div class="container" style="max-width:720px;">
+        <div class="privacy-notice fade" id="privacy">
+          <h2 class="privacy-notice__title">Privacy Notice</h2>
+          <div class="privacy-notice__text">
+            <p>
+              <strong>What we collect:</strong> Your name, email address, your child's age, and any additional information you voluntarily provide (such as accessibility needs or questions).
+            </p>
+            <p>
+              <strong>Why we collect it:</strong> To register your child for the educAItion pilot camp, communicate camp-related details (schedule, location updates, what to bring), and respond to any questions or concerns you share.
+            </p>
+            <p>
+              <strong>How we protect it:</strong> Your data is stored securely through Netlify's form service. Only the educAItion community has access to registration information. We do not sell, share, or distribute your data to any third parties.
+            </p>
+            <p>
+              <strong>How long we keep it:</strong> Your data is retained for 12 months after the pilot camp concludes, after which it will be securely deleted.
+            </p>
+            <p>
+              <strong>Your rights:</strong> You may request access to, correction of, or deletion of your personal data at any time by emailing us. You may also withdraw your consent for future communications at any time.
+            </p>
+            <p>
+              <strong>COPPA compliance:</strong> This camp is designed for parents and guardians of children ages 8&ndash;12. We do not collect information directly from children and do not target our camp to children under 13. Parental consent is required for registration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="section section--alt">
+      <div class="container" style="max-width:560px;">
+        <h2 class="section__title fade">Questions?</h2>
+        <p class="fade" style="text-align:center;color:var(--color-text-mid);line-height:1.7;">
+          We're happy to help. Email us at <a href="mailto:hello@educateducation.com" style="color:var(--color-primary);text-decoration:underline;">hello@educateducation.com</a> or register above and we'll follow up with all the details.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 educAItion. AI literacy camp for families (kids 8&ndash;12 and parents/guardians). Chicago pilot.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
