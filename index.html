@@ -10,6 +10,9 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,7 +46,7 @@
   <main id="main">
 
     <!-- HERO -->
-    <section class="hero section">
+    <section class="hero hero--medium section">
       <div class="container">
         <div class="illustration fade">
           <!-- Sun / Hope illustration -->
@@ -60,19 +63,10 @@
             </defs>
             <!-- Halo -->
             <circle cx="240" cy="140" r="100" fill="url(#halo)"/>
-            <!-- Sun -->
-            <circle cx="240" cy="140" r="55" fill="url(#sunGrad)"/>
-            <!-- Rays -->
-            <g stroke="#FFD700" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
-              <line x1="240" y1="60" x2="240" y2="35"/>
-              <line x1="240" y1="220" x2="240" y2="245"/>
-              <line x1="160" y1="140" x2="135" y2="140"/>
-              <line x1="320" y1="140" x2="345" y2="140"/>
-              <line x1="183" y1="83" x2="165" y2="65"/>
-              <line x1="297" y1="83" x2="315" y2="65"/>
-              <line x1="183" y1="197" x2="165" y2="215"/>
-              <line x1="297" y1="197" x2="315" y2="215"/>
-            </g>
+            <!-- Sun — rising behind the skyline -->
+            <circle cx="240" cy="200" r="60" fill="url(#sunGrad)"/>
+            <!-- Subtle inner highlight for warmth -->
+            <circle cx="240" cy="190" r="45" fill="#FFD166" opacity="0.3"/>
             <!-- City skyline -->
             <rect x="40" y="210" width="35" height="70" rx="2" fill="#D4C4A8"/>
             <rect x="80" y="190" width="45" height="90" rx="2" fill="#C9B896"/>
@@ -123,7 +117,7 @@
         </p>
         <div class="hero__cta fade">
           <a href="register.html" class="btn btn--primary">
-            Register for the Pilot
+            Join the First Cohort
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -137,7 +131,7 @@
         <p class="section__lead fade">
           Not screen time. Not a coding bootcamp. A week of guided discovery that leaves kids curious, creative, and critical thinkers — and parents inspired by what their kids can do.
         </p>
-        <div class="grid grid--3">
+        <div class="grid grid--3" style="background:var(--color-bg-warm);padding:var(--space-xl);border-radius:var(--radius-lg);gap:var(--space-xl);">
           <div class="card fade">
             <div class="card__icon">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
