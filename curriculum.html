@@ -10,6 +10,9 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -97,23 +100,44 @@
         <p class="section__lead fade" style="text-align:center;margin-bottom:var(--space-lg);">
           educAItion brings kids and parents together — because the best learning happens side by side.
         </p>
-        <div class="grid grid--3" style="margin-bottom:var(--space-xl);">
-          <div class="card fade">
-            <div class="card__icon">&#x1F467;&#x1F3FB;</div>
+        <div class="grid grid--3" style="background:var(--color-bg-warm);padding:var(--space-xl);border-radius:var(--radius-lg);gap:var(--space-xl);margin-bottom:var(--space-xl);">
+          <div class="card fade card--wide-icon" style="padding:var(--space-xl);border-radius:var(--radius-lg);background:var(--color-bg-white);border:1px solid var(--color-border-l);">
+            <div class="card__icon">
+              <svg width="80" height="80" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="10" r="4" stroke="#D4A012" stroke-width="1.5"/>
+                <path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#D4A012" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="12" y="18" width="8" height="6" rx="1" stroke="#4A7C59" stroke-width="1.5"/>
+                <path d="M14 20h4" stroke="#4A7C59" stroke-width="1" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h4 class="card__title">For Kids</h4>
             <p class="card__text" style="font-size:0.9375rem;">
               Hands-on exploration: building AI-powered projects, debating tradeoffs, and discovering what machines can and cannot do. Designed for ages 8&ndash;12.
             </p>
           </div>
-          <div class="card fade">
-            <div class="card__icon">&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;</div>
+          <div class="card fade card--wide-icon" style="padding:var(--space-xl);border-radius:var(--radius-lg);background:var(--color-bg-white);border:1px solid var(--color-border-l);">
+            <div class="card__icon">
+              <svg width="80" height="80" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="10" r="4" stroke="#D4A012" stroke-width="1.5"/>
+                <path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#D4A012" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 18c0-2 1.8-4 4-4s4 2 4 4" stroke="#4A7C59" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M14 21l1-1 2 1" stroke="#4A7C59" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <h4 class="card__title">For Parents</h4>
             <p class="card__text" style="font-size:0.9375rem;">
               Dedicated sessions to explore AI literacy from the parent's perspective: navigating AI in the home, understanding bias and ethics, and preparing for an AI-driven future.
             </p>
           </div>
-          <div class="card fade">
-            <div class="card__icon">&#x1F9D1;</div>
+          <div class="card fade card--wide-icon" style="padding:var(--space-xl);border-radius:var(--radius-lg);background:var(--color-bg-white);border:1px solid var(--color-border-l);">
+            <div class="card__icon">
+              <svg width="80" height="80" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" stroke="#D4A012" stroke-width="1.5" opacity="0.7"/>
+                <circle cx="20" cy="12" r="5" stroke="#4A7C59" stroke-width="1.5" opacity="0.7"/>
+                <circle cx="16" cy="22" r="5" stroke="#D4A012" stroke-width="1.5" opacity="0.5"/>
+                <circle cx="16" cy="12" r="1.5" fill="#D4A012" opacity="0.4"/>
+              </svg>
+            </div>
             <h4 class="card__title">Together</h4>
             <p class="card__text" style="font-size:0.9375rem;">
               Family-together activities: creative labs, ethics debates, project building, and the Day 5 showcase where kids present their work to parents and the community.
@@ -123,52 +147,56 @@
       </div>
     </section>
 
-    <!-- FORMAT OPTIONS -->
+    <!-- FORMAT -->
     <section class="section section--alt">
-      <div class="container">
-        <h2 class="section__title fade">Format Options</h2>
-        <div class="grid grid--2">
-          <div class="card fade">
-            <h3 class="card__title">Half-Day (Core)</h3>
-            <p class="card__text" style="margin-bottom:var(--space-md);">
-              <strong>9:00 AM &ndash; 3:00 PM (tentative)</strong> — The full curriculum, optimized for the morning hours when kids' energy and focus are highest.
-            </p>
-            <ul style="color:var(--color-text-mid);line-height:2;font-size:0.9375rem;">
-              <li>&#10003;&ensp;All five days of curriculum</li>
-              <li>&#10003;&ensp;Hands-on projects and group work</li>
-              <li>&#10003;&ensp;Daily parent update</li>
-              <li>&#10003;&ensp;Showcase day presentation</li>
-            </ul>
-          </div>
-          <div class="card fade">
-            <h3 class="card__title">Full-Day (Extension)</h3>
-            <p class="card__text" style="margin-bottom:var(--space-md);">
-              <strong>9:00 AM &ndash; 3:00 PM (tentative)</strong> — Core curriculum plus afternoon creative labs and deep dives.
-            </p>
-            <ul style="color:var(--color-text-mid);line-height:2;font-size:0.9375rem;">
-              <li>&#10003;&ensp;Everything in half-day</li>
-              <li>&#10003;&ensp;Afternoon creative labs</li>
-              <li>&#10003;&ensp;Deeper project work</li>
-              <li>&#10003;&ensp;Unstructured exploration time</li>
-            </ul>
-          </div>
+      <div class="container" style="max-width:680px;">
+        <div class="card fade" style="margin-bottom:var(--space-lg);">
+          <h3 class="card__title">Full Day &mdash; 9:00 AM &ndash; 3:00 PM (tentative)</h3>
+          <p class="card__text" style="margin-bottom:var(--space-md);">
+            The full camp experience. All five days of AI literacy curriculum, lunch break, and afternoon creative extension.
+          </p>
+        </div>
+        <h2 class="section__title fade" style="text-align:center;">Daily Structure</h2>
+        <div class="card fade">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9375rem;">
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <td style="padding:var(--space-sm) 0;width:40%;color:var(--color-text-mid);"><strong>Block</strong></td>
+              <td style="padding:var(--space-sm) 0;color:var(--color-text-mid);"><strong>Format</strong></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);"><strong>Morning Core</strong></td>
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);">AI literacy — hands-on demos, group games, daily project work</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--color-border);">
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);"><strong>Lunch</strong></td>
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);">Open time</td>
+            </tr>
+            <tr>
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);"><strong>Afternoon Extension</strong></td>
+              <td style="padding:var(--space-xs) 0;color:var(--color-text-mid);">Creative labs, deep dives, project work, reflection</td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
 
-    <!-- WHAT TO BRING -->
-    <section class="section section--alt">
+    <!-- DETAILS -->
+    <section class="section">
       <div class="container" style="max-width:680px;">
-        <h2 class="section__title fade">What to Bring</h2>
-        <div class="card fade">
-          <ul style="color:var(--color-text-mid);line-height:2.2;font-size:0.9375rem;">
-            <li>&#10003;&ensp;A laptop (any kind — we'll support Chromebooks, Macs, and Windows PCs)</li>
-            <li>&#10003;&ensp;Water bottle</li>
-            <li>&#10003;&ensp;Snack for lunch break (snacks provided morning and afternoon)</li>
-            <li>&#10003;&ensp;Closed-toe shoes for indoor/outdoor activities</li>
-            <li>&#10003;&ensp;Curiosity and an open mind</li>
-            <li>&#10003;&ensp;No prior tech or AI experience needed</li>
-          </ul>
+        <h2 class="section__title fade">Camp Details</h2>
+        <div class="fade" style="display:grid;gap:var(--space-md);">
+          <div style="padding:var(--space-sm) 0;border-bottom:1px solid var(--color-border-l);">
+            <strong style="color:var(--color-text-mid);">What to bring:</strong>
+            <span style="color:var(--color-text-mid);">A laptop (Chromebook, Mac, or Windows), water bottle, lunch snack, closed-toe shoes, curiosity</span>
+          </div>
+          <div style="padding:var(--space-sm) 0;border-bottom:1px solid var(--color-border-l);">
+            <strong style="color:var(--color-text-mid);">What we provide:</strong>
+            <span style="color:var(--color-text-mid);">Morning snacks, creative tools, project materials, afternoon extension activities</span>
+          </div>
+          <div style="padding:var(--space-sm) 0;">
+            <strong style="color:var(--color-text-mid);">Location:</strong>
+            <span style="color:var(--color-text-mid);">Chicago area (exact location sent upon registration)</span>
+          </div>
         </div>
       </div>
     </section>
