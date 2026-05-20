@@ -97,18 +97,26 @@
             <p class="form-hint">Kids can enroll with or without an adult. Parents or grandparents are welcome to register for themselves.</p>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="child-age">Your Child's Age</label>
-            <select class="form-input" id="child-age" name="child-age">
-              <option value="" disabled selected>Select your child's age</option>
-              <option value="8">8 years old</option>
-              <option value="9">9 years old</option>
-              <option value="10">10 years old</option>
-              <option value="11">11 years old</option>
-              <option value="12">12 years old</option>
-            </select>
-            <p class="form-hint">Our camp is designed for ages 8&ndash;12 (Grades 2&ndash;6). Optional — we'll ask for this if needed.</p>
+          <div class="form-group" id="children-section" style="display:none;">
+            <div id="children-container">
+              <div class="child-entry" data-child-index="0">
+                <label class="form-label" for="child-name-0">Child's Name</label>
+                <input class="form-input" type="text" id="child-name-0" name="child-name" placeholder="Your child's name" required>
+                <label class="form-label" style="margin-top:var(--space-md);">Child's Age</label>
+                <select class="form-input child-age" name="child-age" required>
+                  <option value="" disabled selected>Select your child's age</option>
+                  <option value="8">8 years old</option>
+                  <option value="9">9 years old</option>
+                  <option value="10">10 years old</option>
+                  <option value="11">11 years old</option>
+                  <option value="12">12 years old</option>
+                </select>
+              </div>
+            </div>
+            <button type="button" id="add-child" class="btn btn--accent" style="margin-top:var(--space-md);font-size:0.875rem;padding:0.5rem var(--space-lg);">Add another child</button>
+            <p class="form-hint" style="margin-top:var(--space-sm);">Our camp is designed for ages 8&ndash;12 (Grades 2&ndash;6). Required if your child is enrolling.</p>
           </div>
+          <input type="hidden" name="children" id="children-summary">
 
           <div class="form-group">
             <label class="form-label" for="message">Anything You'd Like Us to Know</label>
@@ -170,7 +178,7 @@
               <strong>Your rights:</strong> You may request access to, correction of, or deletion of your personal data at any time by emailing us. You may also withdraw your consent for future communications at any time.
             </p>
             <p>
-              <strong>COPPA compliance:</strong> This camp is designed for parents and guardians of children ages 8&ndash;12. We do not collect information directly from children and do not target our camp to children under 13. Parental consent is required for registration.
+              <strong>COPPA compliance:</strong> This camp is designed for parents and guardians of children ages 8&ndash;12. We do not collect information directly from children under 13. Parental consent is required for registration.
             </p>
           </div>
         </div>
